@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "@momentum-ui/web-components";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes } from './routes'; // where we are going to specify our routes
 
-const HelloWorld = () => {
-    return (
-        <h1>
-         <md-button variant="primary" tab-index="-1" color="violet"><span slot="text">no disabled</span></md-button>
-        </h1>
-    );
-}
-
-ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+ReactDOM.render(
+  <Router>
+    <Routes />
+  </Router>,
+  document.getElementById('root')
+);
