@@ -1,6 +1,44 @@
 .NavBar {
-    background-color: black;
+    background-color: #00a0d1;
     font-size: 20px;
     color: white;
     height: 70px;
   }
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00a0d1;
+  width: 100%;
+  height: 44px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  border: 1px solid #00a0d1;
+  border-radius: 5px;
+}
+
+.avatar {
+  background-color: #00a0d1;
+  align-items: center;
+  display: flex;
+  padding-right: 10px;
+}
